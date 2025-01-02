@@ -1,0 +1,8 @@
+identifier: com.littlepriceonu.re-shuffle
+name: ReShuffle
+description: Ever wanted to shuffle your playlist *again*? Now you can.
+author: littlepriceonu
+repo: https://github.com/ciderapp/plugin-template-wip
+entry:
+  "plugin.js":
+    type: main
