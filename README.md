@@ -1,33 +1,13 @@
-# Cider + Vue 3 + TypeScript + Vite
+# ReShuffle
 
-**(Requires Cider 2.5 or later)**
+A [Cider](https://cider.sh) plugin to reshuffle the current queue.
 
-This is a template/boilerplate for creating Cider plugins using Vue 3, TypeScript, and Vite.
+The Plugin can be accessed by the 🔀 button added to the top right of
+the Cider client.
 
-## Starting a new plugin project
-Using **Node**
-```bash
-npx giget github:ciderapp/plugin-template your-plugin-name
-```
-Using **Bun**
-```bash
-bunx giget github:ciderapp/plugin-template your-plugin-name
-```
+![A photo of the ReShuffle menu](images/Menu.png)
 
-## Available Commands
-- `npm run dev` - Start development server, Cider can then listen to this server when you select "Enable Vite" from the main menu
-- `npm run build` - Build the plugin to `dist/{plugin.config.ts:identifier}`
-- `npm run prepare-marketplace` - Prepare a ZIP package in the correct format for the Cider Marketplace
+If the `Skip Current Song` is disabled the queue will be reshuffled and the song will pause briefly and then resume at the same time mark.
 
-## How to install after build
-- Copy `dist/{plugin.config.ts:identifier}` to the `/plugins` directory of your Cider app data directory
-    - On Windows, this is `%APPDATA%\C2Windows\plugins`
-    - On macOS, this is `~/Library/Application Support/sh.cider.electron/plugins`
-    - On Linux, this is `~/.config/sh.cider.electron/plugins`
+If it's disabled it will reshuffle the queue and play a new song.
 
-## Preparing a ZIP package for the Cider Marketplace
-Run `npm run prepare-marketplace`
-
-Running this script will create a ZIP file in the `publish` directory that is ready to be uploaded to the Cider Marketplace.
-
-To configure this plugin edit `src/plugin.config.ts`
